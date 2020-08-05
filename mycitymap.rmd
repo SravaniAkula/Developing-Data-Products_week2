@@ -1,0 +1,29 @@
+---
+title: "MycityMap_usingLeaflet"
+author: "Sravani Akula"
+date: "05/08/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## My City Map
+
+
+```{r }
+library(leaflet)
+my<-leaflet() %>% addTiles() %>% addMarkers(lat=17.723290,lng=83.307610,popup="my city")
+my
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
